@@ -3,20 +3,18 @@
 	"theme_color": "#333333",
 	"name": "Junit Academy",
 	"short_name": "Junit Academy",
-	"display": "minimal-ui",
+	"display": "standalone",
 	"start_url": "/",
 	"icons": [
 		{
 			"src": "logo-192.png",
 			"sizes": "192x192",
-			"type": "image/png",
-			"purpose": "any maskable"
+			"type": "image/png"
 		},
 		{
 			"src": "logo-512.png",
 			"sizes": "512x512",
-			"type": "image/png",
-			"purpose": "any maskable"
+			"type": "image/png"
 		}
 	]
 }
