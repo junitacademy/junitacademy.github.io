@@ -22,7 +22,7 @@
   <title>{post.title}</title>
 </svelte:head>
 
-<h2 style="font-weight: bold;">{post.title}</h2>
+<h2 class="post-title">{post.title}</h2>
 
 <div class="content">
   <div style="text-align: center;">
