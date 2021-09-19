@@ -17,12 +17,8 @@
 </svelte:head>
 <div class="list">
   {#each posts as post}
-    <!-- we're using the non-standard `rel=prefetch` attribute to
-				tell Sapper to load the data for the page as soon as
-				the user hovers over the link or taps it, instead of
-				waiting for the 'click' event -->
     <div class="list-item">
-      <a href="anchorfm/episode/{post.slug}">{post.title}</a>
+      <a rel="prefetch" href="anchorfm/episode/{post.slug}">{post.title}</a>
     </div>
   {/each}
 </div>

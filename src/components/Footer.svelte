@@ -18,7 +18,7 @@
     margin: 0 auto;
     box-sizing: border-box;
   }
-  footer p.copyright{
+  footer p.copyright {
     color: gray;
     font-size: smaller;
   }
