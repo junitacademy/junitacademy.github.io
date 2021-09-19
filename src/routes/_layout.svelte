@@ -1,11 +1,12 @@
 <script>
 	import Nav from '../components/Nav.svelte';
+	import Footer from '../components/Footer.svelte';
 
 	export let segment;
 </script>
 
 <style>
-	main {
+	main{
 		position: relative;
 		max-width: 56em;
 		background-color: white;
@@ -20,3 +21,5 @@
 <main>
 	<slot></slot>
 </main>
+
+<Footer />
