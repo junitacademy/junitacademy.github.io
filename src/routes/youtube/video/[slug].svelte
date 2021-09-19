@@ -37,7 +37,7 @@
     />
   </div>
   <div class="post-content">
-    {@html post.description}
+    {@html post.description.replace(/\n/g,'<br/>')}
   </div>
 </div>
 
