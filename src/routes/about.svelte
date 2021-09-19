@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>About</title>
+	<title>About | Junit Academy</title>
 </svelte:head>
 
 <h1>About Us</h1>

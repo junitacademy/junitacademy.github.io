@@ -3,7 +3,16 @@
 </script>
 
 <style>
-	nav {
+	.nav-bar > nav{
+		position: relative;
+		max-width: 56em;
+		background-color: white;
+		padding: 0 2em;
+		margin: 0 auto;
+		box-sizing: border-box;
+	}
+
+	.nav-bar {
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
 		padding: 0 1em;
@@ -48,10 +57,14 @@
 	}
 </style>
 
+<div class="nav-bar">
 <nav>
 	<ul>
 		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
 		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
 		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">Blog</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'youtube' ? 'page' : undefined}" href="youtube">Youtube</a></li>
+		<li><a rel=prefetch aria-current="{segment === 'anchorfm' ? 'page' : undefined}" href="anchorfm">AnchorFm</a></li>
 	</ul>
 </nav>
+</div>

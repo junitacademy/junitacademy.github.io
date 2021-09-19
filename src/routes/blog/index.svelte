@@ -18,7 +18,7 @@
 </style>
 
 <svelte:head>
-	<title>Blog</title>
+	<title>Blog | Junit Academy</title>
 </svelte:head>
 
 <h1>Recent posts</h1>
@@ -29,6 +29,6 @@
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
 				waiting for the 'click' event -->
-		<li><a rel="prefetch" href="blog/{post.slug}">{post.title}</a></li>
+		<li><a href="blog/{post.slug}">{post.title}</a></li>
 	{/each}
 </ul>
