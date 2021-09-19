@@ -3,11 +3,6 @@
 </script>
 
 <style>
-	h1, p {
-		text-align: center;
-		margin: 0 auto;
-	}
-
 	h1 {
 		font-size: 2.8em;
 		text-transform: uppercase;
