@@ -1,6 +1,6 @@
 <script context="module">
 	export function preload() {
-		return this.fetch(`https://junitacademy.github.io/api/sapper/blog/index.json`).then(r => r.json()).then(posts => {
+		return this.fetch(`/api/blog/`).then(r => r.json()).then(posts => {
 			return { posts };
 		});
 	}

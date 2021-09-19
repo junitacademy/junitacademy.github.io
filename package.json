@@ -6,7 +6,9 @@
     "dev": "sapper dev",
     "build": "sapper build",
     "export": "sapper export",
-    "start": "node __sapper__/build"
+    "start": "node __sapper__/build",
+    "push": "git add . && git commit -m \"update [skip ci]\" && git push -u origin main",
+    "deploy": "git add . && git commit -m \"Deploy\" && git push -u origin main"
   },
   "dependencies": {
     "compression": "^1.7.1",
