@@ -1,11 +1,11 @@
 {
-  "name": "TODO",
-  "description": "TODO",
-  "version": "0.0.1",
+  "name": "junit-academy",
+  "description": "Junit Academy",
+  "version": "21.09.20",
   "scripts": {
     "dev": "sapper dev",
     "build": "sapper build --legacy",
-    "export": "sapper export --legacy",
+    "export": "rm -rf __sapper__/export && sapper export --legacy",
     "start": "node __sapper__/build",
     "push": "git add . && git commit -m \"update [skip ci]\" && git push -u origin main",
     "deploy": "git add . && git commit -m \"Deploy\" && git push -u origin main"

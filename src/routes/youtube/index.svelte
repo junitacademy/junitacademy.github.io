@@ -15,10 +15,13 @@
 <svelte:head>
   <title>Youtube | Junit Academy</title>
 </svelte:head>
+
 <div class="list">
   {#each posts as post}
     <div class="list-item">
-      <a rel="prefetch" href="youtube/video/{post.slug}/{post.id}">{post.title}</a>
+      <a rel="prefetch" href="youtube/video/{post.slug}/{post.id}"
+        >{post.title}</a
+      >
     </div>
   {/each}
 </div>

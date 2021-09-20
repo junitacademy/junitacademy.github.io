@@ -10,7 +10,7 @@ const dev = NODE_ENV === 'development';
 
 polka() // You can also use Express
   .use(
-    '/api',
+    '/api/',
     createProxyMiddleware({
       target: 'https://junitacademy.github.io/',
       changeOrigin: true,

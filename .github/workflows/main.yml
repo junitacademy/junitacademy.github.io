@@ -4,8 +4,8 @@ on:
     branches:
       - main
   schedule:
-    # Runs in every 10 minutes
-    - cron: '0 */3 * * *'
+    # Runs in every 6 hours
+    - cron: '0 */6 * * *'
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
