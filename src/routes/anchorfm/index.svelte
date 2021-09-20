@@ -18,7 +18,7 @@
 <div class="list">
   {#each posts as post}
     <div class="list-item">
-      <a rel="prefetch" href="anchorfm/episode/{post.slug}">{post.title}</a>
+      <a rel="prefetch" href="anchorfm/episode/{post.slug}/{post.id}">{post.title}</a>
     </div>
   {/each}
 </div>

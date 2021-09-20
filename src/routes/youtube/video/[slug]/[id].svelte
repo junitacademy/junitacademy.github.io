@@ -1,9 +1,7 @@
 <script context="module">
   export async function preload({ params }) {
-    // the `slug` parameter is available because
-    // this file is called [slug].svelte
 
-    const res = await this.fetch(`/api/youtube/video/${params.slug}.json`);
+    const res = await this.fetch(`/api/youtube/items/${params.id}.json`);
     const data = await res.json();
 
     if (res.status === 200) {
@@ -37,7 +35,7 @@
     />
   </div>
   <div class="post-content">
-    {@html post.description.replace(/\n/g,'<br/>')}
+    {@html (post.description.replace(/\n/g,'<br/>'))}
   </div>
 </div>
 
