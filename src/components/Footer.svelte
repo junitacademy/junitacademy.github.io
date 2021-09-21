@@ -2,11 +2,11 @@
 
 <footer>
   <div>
-    <p class="copyright">© Copyright 2021 - Junit Academy</p>
-    <div style="display: none;">
+    <p class="copyright">© Copyright 2021 - Junit Academy | <a href="sitemap.xml" target="_blank">Sitemap</a></p>
+    <!-- <div style="display: none;">
       <a href="youtube/sitemap.xml">youtube</a>
       <a href="anchorfm/sitemap.xml">anchorfm</a>
-    </div>
+    </div> -->
   </div>
 </footer>
 
