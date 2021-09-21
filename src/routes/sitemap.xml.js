@@ -1,10 +1,29 @@
 import axios from "axios";
+import { debug } from "svelte/internal";
+
+let baseUrl = 'https://junitacademy.github.io';
+
+/**
+ * @TODO get actual modified time using fs.stat
+ */
+let dt = new Date().toJSON();
+
+let pages = [
+  {
+    loc: `${baseUrl}/`,
+    lastmod: dt,
+  },
+  {
+    loc: `${baseUrl}/about`,
+    lastmod : dt,
+  }
+]
 
 /** Return items from all spurces like youtube, anchorfm etc.*/
 async function getAll() {
 
   /** Base url of the website */
-  let baseUrl = 'https://junitacademy.github.io';
+  
 
   /** Defines types of Items */
   let types = [
@@ -24,7 +43,7 @@ async function getAll() {
   );
 
   /** Concat all arrays with [] empty array using spread syntax */
-  let items = [].concat(...allReq.map((req, r) => {
+  let items = pages.concat(...allReq.map((req, r) => {
     return req.data.map(item => {
       return {
         loc: `${baseUrl}${types[r].prefix}/${item.slug}/${item.id}`,
