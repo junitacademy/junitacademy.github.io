@@ -1,6 +1,6 @@
 <div>
     <h3>Welcome to Junit Academy</h3>
-    <h4>I'm working on a web app project.</h4>
+    <h4>I'm working on several web app projects.</h4>
 </div>
 
 <style>
